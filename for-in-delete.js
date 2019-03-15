@@ -45,13 +45,13 @@ for(var key in values) {
 function showValues( obj ) {
   let concat="";
   for(var prop in obj) {
-    concat = concat + prop;
+    concat = concat + obj[prop];
   }
   return concat;
 }
 
-let myTest = showValues(values);
-console.log(myTest);
+// let myTest = showValues(values);
+// console.log(myTest);
 
 
 
@@ -64,16 +64,32 @@ console.log(myTest);
   Return the updated object.
 */
 
+function greaterThan10 (objs) {
+  for (var num in objs) {
+    if (objs[num] > 10) {
+      objs[num] = 0;
+    } 
+  } 
+  return objs
+}
 
+// let myNumbers = {
+//   a: 10.5,
+//   b: 33,
+//   c: 5,
+//   d: 10
+// }
 
-
+// let results = greaterThan10(myNumbers);
+// console.log(results);
 
 
 ////////// PROBLEM 3 //////////
 
 /*
   Write a function called double that takes in an object.
-  Write a for in loop that loops over the object and changes every value to be itself multipled by 2.
+  Write a for in loop that loops over the object and 
+  changes every value to be itself multipled by 2.
   Return the updated object.
 */
 
