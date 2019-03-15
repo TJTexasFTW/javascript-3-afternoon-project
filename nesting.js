@@ -51,7 +51,24 @@ var employees = [
 */
 
 //Code Here
-function employeeUpdater()
+function employeeUpdater() {
+  for (var key in employees) {
+    // console.log(employees);
+    // console.log(employees[key].email);
+    if (employees[key].firstName === "Theo") {
+      // console.log(employees[key])
+      delete employees.key;
+    } else if (employees[key].firstName === "Lorie") {
+      employees[key].department = "HR";
+      // console.log(employees[key])
+    }
+    
+    // console.log(employees[key].firstName)
+    // break
+  }
+  return employees
+    
+}
   
 
 
