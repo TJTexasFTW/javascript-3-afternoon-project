@@ -57,7 +57,11 @@ function employeeUpdater() {
     // console.log(employees[key].email);
     if (employees[key].firstName === "Theo") {
       // console.log(employees[key])
-      delete employees.key;
+      delete employees[key].firstName;
+      delete employees[key].lastName;
+      delete employees[key].email;
+      delete employees[key].department;
+      
     } else if (employees[key].firstName === "Lorie") {
       employees[key].department = "HR";
       // console.log(employees[key])
