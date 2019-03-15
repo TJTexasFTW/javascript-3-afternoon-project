@@ -53,7 +53,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function totalPopulation (obj) {
+  const {utah, california, texas, arizona} = obj;
+  var totPopulation = utah + california + texas + arizona;
+  return totPopulation; _
+}
 
 
 ////////// PROBLEM 4 //////////
