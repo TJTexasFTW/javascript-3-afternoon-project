@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
+const {color, make, model, year} = carDetails;
 
 
 ////////// PROBLEM 2 //////////
