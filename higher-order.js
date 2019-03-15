@@ -50,7 +50,7 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
   function(element, index, wholeArray){}  Function Form
   (element, index, wholeArray)=>{}    Arrow Form
 */
-const wTax = prices.map(function withTax(priceB4){
+const postTaxPrices = prices.map(function withTax(priceB4){
   return priceB4 * 1.07;
 })
 //WTF
