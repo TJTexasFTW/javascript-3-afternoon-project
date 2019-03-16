@@ -5,7 +5,7 @@
 
   You can refresh the page at any time to re-run all the tests.
 */
-//WTF
+
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
@@ -66,38 +66,8 @@ function employeeUpdater() {
       employees[key].department = "HR";
       // console.log(employees[key])
     }
-    
-    // console.log(employees[key].firstName)
-    // break
-  }
-  return employees
-    
-}
-  
 
-//Code Here
-function employeeUpdater() {
-  for (var key in employees) {
-    // console.log(employees);
-    // console.log(employees[key].email);
-    if (employees[key].firstName === "Theo") {
-      // console.log(employees[key])
-      delete employees[key].firstName;
-      delete employees[key].lastName;
-      delete employees[key].email;
-      delete employees[key].department;
-      
-    } else if (employees[key].firstName === "Lorie") {
-      employees[key].department = "HR";
-      // console.log(employees[key])
-    }
-    
-    // console.log(employees[key].firstName)
-    // break
-  }
-  return employees
-    
-}
+
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -123,8 +93,6 @@ function removeDuplicates(arr) {
   }
   return arr;
 }
-
-
 
 
 ////////// PROBLEM 3 //////////
