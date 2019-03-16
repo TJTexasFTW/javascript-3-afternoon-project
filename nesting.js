@@ -156,7 +156,11 @@ var myCar = {
 
 //Code Here
 
-
+function recordCleaner(obj){
+  for (var i = 0; i < obj.length; i++) {
+     obj[i].atFaultForAccident = false;
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
