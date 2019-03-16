@@ -75,18 +75,57 @@ function employeeUpdater() {
 }
   
 
+//Code Here
+function employeeUpdater() {
+  for (var key in employees) {
+    // console.log(employees);
+    // console.log(employees[key].email);
+    if (employees[key].firstName === "Theo") {
+      // console.log(employees[key])
+      delete employees[key].firstName;
+      delete employees[key].lastName;
+      delete employees[key].email;
+      delete employees[key].department;
+      
+    } else if (employees[key].firstName === "Lorie") {
+      employees[key].department = "HR";
+      // console.log(employees[key])
+    }
+    
+    // console.log(employees[key].firstName)
+    // break
+  }
+  return employees
+    
+}
+////////// PROBLEM 2 //////////
 
+// Do not edit the code below.
+var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+// Do not edit the code above.
+
+/*
+  The array above represents IDs tied to reported workplace accidents. 
+  An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+    1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+    2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+    3. Return the updated array.
+*/
+
+//Code Here
 function removeDuplicates(arr) {
   for (var i = 0; i < arr.length; i++) {
     for (var x = i+1; x < arr.length; x++) {
       if (arr[i] === arr[x]) {
         arr.splice(x, 1);
-        //break?
       }
     }
   }
   return arr;
 }
+
+
+
 
 ////////// PROBLEM 3 //////////
 
@@ -179,4 +218,12 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
-
+function looper(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    for (var x = 0; x < arr[i].length; x++) {
+    if (arr[i][x] % 2 === 0) {
+      arr[i][x] = "even" 
+     } else arr[i][x] = "odd"
+    }
+  }
+}
