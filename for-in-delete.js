@@ -139,8 +139,10 @@ console.log(deleteAllThethings)
 */
 
 //Code Here
-
-
+function removePassword(obj){
+  delete obj.password;
+  return obj;
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -158,7 +160,11 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
+for (var whymihere in deleteTheBigNumbers) {
+  if (deleteTheBigNumbers[whymihere]>100) {
+    delete deleteTheBigNumbers[whymihere];
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
