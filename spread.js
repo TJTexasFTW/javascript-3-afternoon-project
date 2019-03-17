@@ -54,3 +54,5 @@ let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
 // code here
+// let combinedArrays = [...arr1] + [...arr2]; 
+let combinedArrays = [...arr1, ...arr2]; 
