@@ -5,7 +5,7 @@
 
   You can refresh the page at any time to re-run all the tests.
 */
-
+//WTF
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
@@ -66,7 +66,13 @@ function employeeUpdater() {
       employees[key].department = "HR";
       // console.log(employees[key])
     }
-
+    
+    // console.log(employees[key].firstName)
+    // break
+  }
+  return employees
+    
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -88,12 +94,13 @@ function removeDuplicates(arr) {
     for (var x = i+1; x < arr.length; x++) {
       if (arr[i] === arr[x]) {
         arr.splice(x, 1);
+        i--;
+        x--;
       }
-    }
-  }
-  return arr;
-}
 
+    } 
+  } return arr;
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -163,10 +170,10 @@ var myCar = {
 
 //Code Here
 
-function recordCleaner(obj){
-  for (var i = 0; i < obj.length; i++) {
-     obj[i].atFaultForAccident = false;
-  }
+function recordCleaner(){
+  for (var i = 0; i < myCar.accidents.length; i++) {
+     myCar.accidents[i].atFaultForAccident = false;
+  } 
 }
 
 ////////// PROBLEM 5 //////////
@@ -185,13 +192,13 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
 function looper(arr) {
   for (var i = 0; i < arr.length; i++) {
     for (var x = 0; x < arr[i].length; x++) {
     if (arr[i][x] % 2 === 0) {
       arr[i][x] = "even" 
-     } else arr[i][x] = "odd"
-    }
-  }
+     } else {
+      arr[i][x] = "odd" }
+  } 
+} return arr;
 }
